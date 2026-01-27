@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@dcyfr/ai": "^1.0.0",
-    "@dcyfr/agents": "file:../dcyfr-agents"
+    "@dcyfr/agents": "file:../dcyfr-ai-agents"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

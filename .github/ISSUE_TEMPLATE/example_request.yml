@@ -1,0 +1,46 @@
+name: Example Request
+description: Suggest a new example or demonstration
+title: "[Example]: "
+labels: ["example", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a new example to help others learn the framework!
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Example Description
+      description: What should this example demonstrate?
+      placeholder: Describe the use case and what it would teach
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What type of example?
+      options:
+        - Basic Usage
+        - Plugin Development
+        - Agent Patterns
+        - Performance Optimization
+        - Integration
+        - Other
+    validations:
+      required: true
+  
+  - type: textarea
+    id: code
+    attributes:
+      label: Proposed Implementation
+      description: If you have ideas for the code, share them
+      render: typescript
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other details or references

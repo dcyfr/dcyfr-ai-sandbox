@@ -190,7 +190,7 @@ MIT License - See LICENSE file for details
 ## 🔗 Related Projects
 
 - [@dcyfr/ai](../dcyfr-ai) - Core AI framework
-- [@dcyfr/agents](../dcyfr-agents) - Validation plugins
+- [@dcyfr/agents](../dcyfr-ai-agents) - Validation plugins
 - [dcyfr-labs](../dcyfr-labs) - Main application
 
 ---
