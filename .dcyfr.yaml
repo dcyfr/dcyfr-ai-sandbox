@@ -1,0 +1,26 @@
+# DCYFR AI Configuration - Test Project
+version: '1.0.0'
+
+# Extend workspace configuration
+extends: ../.dcyfr-workspace/config.yaml
+
+project:
+  name: '@dcyfr/ai-sandbox'
+  type: sandbox
+  description: 'Experimentation sandbox and examples for DCYFR AI framework'
+
+# Testing-specific telemetry
+telemetry:
+  enabled: true
+  storage: file
+  storagePath: ./telemetry
+  testMode: true
+  captureTestResults: true
+
+# No validation needed for test project
+validation:
+  enabled: false
+
+# Test-specific agents
+agents:
+  enabled: false

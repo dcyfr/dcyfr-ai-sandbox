@@ -1,0 +1,53 @@
+{
+  "name": "@dcyfr/ai-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox and examples for DCYFR AI framework experimentation",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24.13.0",
+    "npm": ">=11.6.2"
+  },
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "example:basic": "node examples/basic-usage.js",
+    "example:plugins": "node examples/plugin-system.js",
+    "example:agents": "node examples/agent-patterns.js"
+  },
+  "dependencies": {
+    "@dcyfr/ai": "^1.0.0",
+    "@dcyfr/agents": "file:../dcyfr-agents"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  },
+  "keywords": [
+    "dcyfr",
+    "ai",
+    "testing",
+    "examples",
+    "framework"
+  ],
+  "author": "Drew (dcyfr)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcyfr/dcyfr-ai-sandbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dcyfr/dcyfr-ai-sandbox/issues"
+  },
+  "homepage": "https://github.com/dcyfr/dcyfr-ai-sandbox#readme"
+}
