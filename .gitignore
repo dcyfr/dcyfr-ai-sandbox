@@ -1,23 +1,6 @@
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# Build output
-dist/
-build/
-*.tsbuildinfo
-
-# Test coverage
-coverage/
-.nyc_output/
-test-results/
-
-# Environment
-.env
-.env.local
-.env.*.local
+# OS
+.DS_Store
+Thumbs.db
 
 # IDE
 .vscode/
@@ -26,19 +9,43 @@ test-results/
 *.swo
 *~
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+# Environment
+.env
+.env.local
+.env.*.local
+config.json
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Test coverage
+coverage/
+.nyc_output/
+*.lcov
+.vitest/
+
+# Build outputs
+dist/
+*.tsbuildinfo
 
 # Logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
+.dcyfr/telemetry.log
+telemetry-output.jsonl
 
-# Temporary
+# Temporary files
 *.tmp
-*.bak
-.temp/
+temp/
+tmp/
+
+# Private directories
+.dcyfr-workspace/
+**/.private/**
+**/.archive/**
