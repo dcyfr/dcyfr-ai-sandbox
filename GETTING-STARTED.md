@@ -8,7 +8,7 @@ Welcome to the DCYFR AI Sandbox! This repository is your playground for experime
 
 From the workspace root:
 ```bash
-cd /Users/drew/DCYFR/code
+cd ${WORKSPACE_ROOT}
 npm install
 ```
 
