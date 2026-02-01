@@ -170,6 +170,26 @@ Test results are generated in:
 
 ---
 
+## 📦 Versioning
+
+This package uses [Changesets](https://github.com/changesets/changesets) for version tracking.
+
+### Creating a Changeset
+
+When making significant changes:
+
+```bash
+npm run changeset
+```
+
+This will prompt you to select the change type and provide a summary. The changeset will be committed with your changes.
+
+### Version History
+
+Versions are tracked via git tags. This is a private sandbox package and is not published to npm.
+
+---
+
 ## 🤝 Contributing
 
 This is an experimentation sandbox for the DCYFR AI framework. When adding content:

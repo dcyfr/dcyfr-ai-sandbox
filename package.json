@@ -18,13 +18,22 @@
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "example:basic": "node examples/basic-usage.js",
     "example:plugins": "node examples/plugin-system.js",
-    "example:agents": "node examples/agent-patterns.js"
+    "example:agents": "node examples/agent-patterns.js",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:tag": "changeset tag",
+    "release": "changeset tag",
+    "version:patch": "npm version patch -m 'chore: bump version to %s'",
+    "version:minor": "npm version minor -m 'chore: bump version to %s'",
+    "version:major": "npm version major -m 'chore: bump version to %s'"
   },
   "dependencies": {
     "@dcyfr/agents": "file:../dcyfr-ai-agents",
     "@dcyfr/ai": "^1.0.1"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
