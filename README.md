@@ -201,9 +201,17 @@ This is an experimentation sandbox for the DCYFR AI framework. When adding conte
 
 ---
 
-## 📝 License
+## 📝 License & Sponsorship
 
-MIT License - See LICENSE file for details
+**License:** MIT for personal/non-commercial use. Commercial use requires a paid tier.
+
+**Sponsorship Tiers:**
+- 🌍 **Community** (Free) - Personal use + Signal community
+- 🚀 **Founder** ($2,400/yr) - Full commercial license + consultation
+- 🏢 **Enterprise** ($9,600/yr) - Enterprise license + premium support
+
+**Learn more:** [SPONSORSHIP.md](../SPONSORSHIP.md)
+**Trademark:** "DCYFR" is a trademark of DCYFR Labs.
 
 ---
 

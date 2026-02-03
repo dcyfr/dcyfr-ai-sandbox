@@ -2,6 +2,17 @@
 
 Thank you for your interest in contributing! This sandbox is part of the DCYFR AI framework ecosystem.
 
+## Licensing & Contributions
+
+By contributing to this sandbox, you agree that:
+- Your contributions will be licensed under the MIT License
+- You have the right to submit the contribution under this license
+- You grant DCYFR Labs perpetual rights to use, modify, and distribute your contribution
+
+**Trademark:** "DCYFR" is a trademark of DCYFR Labs. See [TRADEMARK.md](../TRADEMARK.md)
+
+---
+
 ## Getting Started
 
 1. Fork the repository
