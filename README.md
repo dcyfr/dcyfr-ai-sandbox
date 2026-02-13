@@ -28,7 +28,7 @@ This repository provides:
 
 ```bash
 # From workspace root
-cd dcyfr-ai-tests
+cd dcyfr-ai-sandbox
 npm install
 ```
 
