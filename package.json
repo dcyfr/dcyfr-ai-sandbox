@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@dcyfr/agents": "file:../dcyfr-ai-agents",
-    "@dcyfr/ai": "^1.0.4"
+    "@dcyfr/ai": "^1.1.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
