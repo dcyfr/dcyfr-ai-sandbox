@@ -1,0 +1,46 @@
+{
+  "repo_notes": [
+    {
+      "content": "dcyfr-ai-sandbox is an experimentation and testing environment for AI agent development. Safe space for prototyping new agents, testing LLM integrations, validating workflows before promotion to production packages. Uses both @dcyfr/ai framework and @dcyfr/agents.",
+      "author": "DCYFR Workspace Agent"
+    },
+    {
+      "content": "Purpose: Rapid prototyping of agent capabilities, testing new MCP servers, experimenting with delegation patterns, validating agent personas before production deployment, benchmarking LLM provider performance, testing memory layer strategies.",
+      "author": "DCYFR Workspace Agent"
+    },
+    {
+      "content": "Structure: experiments/ (one-off agent prototypes), benchmarks/ (performance testing), examples/ (reference implementations), tests/ (integration testing sandbox). All code here is considered experimental and may not be production-ready.",
+      "author": "DCYFR Workspace Agent"
+    },
+    {
+      "content": "Testing patterns: Use sandbox for validating breaking changes to @dcyfr/ai, testing agent reputation scoring, experimenting with new LLM models, prototyping custom tools, validating delegation contracts before deploying to dcyfr-labs.",
+      "author": "DCYFR Workspace Agent"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Sandbox Overview",
+      "purpose": "Purpose of sandbox environment, experimentation workflow, graduation criteria for promoting code to production packages, safety guidelines"
+    },
+    {
+      "title": "Experimental Agents",
+      "purpose": "Agent prototypes in experiments/, testing new capabilities, persona experimentation, delegation pattern validation, what makes an agent ready for production"
+    },
+    {
+      "title": "MCP Server Prototypes",
+      "purpose": "Experimental MCP servers, testing new tool integrations, protocol validation, performance benchmarking before production deployment"
+    },
+    {
+      "title": "Benchmarking Suite",
+      "purpose": "Performance benchmarks in benchmarks/, LLM provider comparison, agent execution metrics, memory usage profiling, latency testing"
+    },
+    {
+      "title": "Integration Testing",
+      "purpose": "Sandbox-specific integration tests, testing @dcyfr/ai + @dcyfr/agents interaction, validating breaking changes, cross-package compatibility checks"
+    },
+    {
+      "title": "Examples & Tutorials",
+      "purpose": "Reference implementations in examples/, how to use @dcyfr/ai framework, common agent patterns, MCP server examples, delegation examples"
+    }
+  ]
+}
