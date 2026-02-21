@@ -1,0 +1,33 @@
+# Devin GitHub Integration Configuration
+# ====================================
+# Cost: FREE (included by default, no ACU consumption)
+# Purpose: PR review comparison test vs Copilot + SonarCloud
+review_mode: comment_only
+auto_fix: false
+
+triggers:
+  pull_request:
+    - opened
+    - synchronize
+    - reopened
+
+focus:
+  - security
+  - performance
+  - complexity
+  - type_safety
+  - best_practices
+  - code_smells
+
+ignore:
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
+
+comment_style: conversational
+severity_threshold: medium
+
+custom_instructions: |
+  You are reviewing code for dcyfr-ai-sandbox test repository.
+  Focus on finding real issues, not style preferences.
+  Flag: security vulnerabilities, cognitive complexity, type safety, performance issues, code duplication.
