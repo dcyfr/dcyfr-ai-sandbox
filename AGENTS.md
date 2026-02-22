@@ -399,3 +399,8 @@ This sandbox is open for experimentation:
 **Last Updated:** February 1, 2026  
 **Purpose:** Safe experimentation and learning  
 **No Production Code:** This is a sandbox!
+
+## Quality Gates
+- TypeScript: 0 errors (`npm run typecheck`)
+- Tests: ≥99% pass rate (`npm run test`)
+- Lint: 0 errors (`npm run lint`)
