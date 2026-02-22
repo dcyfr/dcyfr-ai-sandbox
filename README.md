@@ -376,7 +376,7 @@ This is an experimentation sandbox for the DCYFR AI framework. When adding conte
 - 🚀 **Founder** ($2,400/yr) - Full commercial license + consultation
 - 🏢 **Enterprise** ($9,600/yr) - Enterprise license + premium support
 
-**Learn more:** [SPONSORSHIP.md](../SPONSORSHIP.md)
+**Learn more:** [SPONSORS.md](../SPONSORS.md)
 **Trademark:** "DCYFR" is a trademark of DCYFR Labs.
 
 ---
