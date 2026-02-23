@@ -1,5 +1,7 @@
 # DCYFR AI Sandbox
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr-ai-sandbox)
+
 **Experimentation sandbox and examples for the DCYFR AI framework**
 
 [![Tests](https://img.shields.io/badge/Tests-Passing-28a745?style=flat-square)](./tests/)
