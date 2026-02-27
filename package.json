@@ -19,10 +19,6 @@
     "example:basic": "node examples/basic-usage.js",
     "example:plugins": "node examples/plugin-system.js",
     "example:agents": "node examples/agent-patterns.js",
-    "changeset": "changeset",
-    "changeset:version": "changeset version",
-    "changeset:tag": "changeset tag",
-    "release": "changeset tag",
     "version:patch": "npm version patch -m 'chore: bump version to %s'",
     "version:minor": "npm version minor -m 'chore: bump version to %s'",
     "version:major": "npm version major -m 'chore: bump version to %s'"
