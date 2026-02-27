@@ -1,15 +1,20 @@
 # DCYFR AI Sandbox
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr-ai-sandbox)
+> **🔒 INTERNAL TESTING INFRASTRUCTURE (Not for Public Use)**  
+> This is internal testing and experimentation infrastructure for the DCYFR workspace.  
+> **Status:** Never published to npm (marked `"private": true`)  
+> **Purpose:** Framework testing, plugin development, performance benchmarks  
+> **Not suitable for:** Production use, external projects, public consumption
 
-**Experimentation sandbox and examples for the DCYFR AI framework**
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr-ai-sandbox)
 
 [![Tests](https://img.shields.io/badge/Tests-Passing-28a745?style=flat-square)](./tests/)
 [![Coverage](https://img.shields.io/badge/Coverage-85%25-yellow?style=flat-square)](./coverage/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)](./tsconfig.json)
+[![Private](https://img.shields.io/badge/Status-Internal%20Only-red?style=flat-square)](https://github.com/dcyfr/dcyfr-ai-sandbox)
 
-Version: 1.0.0
-Status: Active Development
+Version: 1.0.1 (internal)
+Status: Active Development (Workspace-Only)
 
 ---
 
