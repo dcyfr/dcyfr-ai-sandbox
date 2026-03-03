@@ -5,7 +5,7 @@
  * Demonstrates AI agent implementation patterns
  */
 
-console.log('DCYFR AI Framework - Agent Patterns Example\n');
+console.log('DCYFR AI Harness - Agent Patterns Example\n');
 console.log('============================================\n');
 
 console.log('This example demonstrates:');

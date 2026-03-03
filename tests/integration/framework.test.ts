@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-describe('DCYFR AI Framework Integration', () => {
+describe('DCYFR AI Harness Integration', () => {
   it('should load framework', () => {
     expect(true).toBe(true);
   });

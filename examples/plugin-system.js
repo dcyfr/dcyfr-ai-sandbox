@@ -5,7 +5,7 @@
  * Demonstrates plugin loading and execution
  */
 
-console.log('DCYFR AI Framework - Plugin System Example\n');
+console.log('DCYFR AI Harness - Plugin System Example\n');
 console.log('===========================================\n');
 
 console.log('This example demonstrates:');
