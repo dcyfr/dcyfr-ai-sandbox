@@ -1,7 +1,7 @@
 {
   "name": "@dcyfr/ai-sandbox",
   "version": "1.0.1",
-  "description": "Sandbox and examples for DCYFR AI framework experimentation",
+  "description": "Sandbox and examples for DCYFR AI harness experimentation",
   "type": "module",
   "private": true,
   "engines": {

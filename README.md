@@ -365,7 +365,7 @@ Versions are tracked via git tags. This is a private sandbox package and is not 
 
 ## 🤝 Contributing
 
-This is an experimentation sandbox for the DCYFR AI framework. When adding content:
+This is an experimentation sandbox for the DCYFR AI harness. When adding content:
 
 1. Follow existing patterns and conventions
 2. Ensure examples are clear and well-documented

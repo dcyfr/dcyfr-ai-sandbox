@@ -8,7 +8,7 @@
 import { PluginLoader } from '@dcyfr/ai';
 
 async function main() {
-  console.log('DCYFR AI Framework - Basic Usage Example\n');
+  console.log('DCYFR AI Harness - Basic Usage Example\n');
   console.log('==========================================\n');
 
   try {

@@ -7,7 +7,7 @@ extends: ../.dcyfr-workspace/config.yaml
 project:
   name: '@dcyfr/ai-sandbox'
   type: sandbox
-  description: 'Experimentation sandbox and examples for DCYFR AI framework'
+  description: 'Experimentation sandbox and examples for DCYFR AI harness'
 
 # Testing-specific telemetry
 telemetry:

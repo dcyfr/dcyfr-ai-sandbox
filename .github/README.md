@@ -1,6 +1,6 @@
 ## About
 
-🎯 **DCYFR AI Sandbox** is an experimentation environment for the [DCYFR AI Framework](https://github.com/dcyfr/dcyfr-ai).
+🎯 **DCYFR AI Sandbox** is an experimentation environment for the [DCYFR AI Harness](https://github.com/dcyfr/dcyfr-ai).
 
 ## Quick Links
 

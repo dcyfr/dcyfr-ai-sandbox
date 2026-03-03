@@ -1,6 +1,6 @@
 # Contributing to DCYFR AI Sandbox
 
-Thank you for your interest in contributing! This sandbox is part of the DCYFR AI framework ecosystem.
+Thank you for your interest in contributing! This sandbox is part of the DCYFR AI harness ecosystem.
 
 ## Licensing & Contributions
 
@@ -58,4 +58,4 @@ Open an issue or discussion on GitHub!
 
 ---
 
-Part of the [DCYFR AI Framework](https://github.com/dcyfr/dcyfr-ai)
+Part of the [DCYFR AI Harness](https://github.com/dcyfr/dcyfr-ai)
