@@ -17,7 +17,7 @@ jobs:
     continue-on-error: true  # Allow migration to proceed
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24.13.0'
       - run: npm install
@@ -31,7 +31,7 @@ jobs:
     continue-on-error: true  # Allow migration to proceed
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24.13.0'
       - run: npm install
@@ -48,7 +48,7 @@ jobs:
         node-version: ['24.13.0']
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
