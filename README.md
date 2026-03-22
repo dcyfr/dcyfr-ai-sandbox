@@ -21,6 +21,7 @@ Status: Active Development (Workspace-Only)
 ## 📋 Overview
 
 This repository provides:
+
 - **Experimentation Space** - Test and explore @dcyfr/ai framework features
 - **Usage Examples** - Demonstrate real-world patterns and best practices
 - **Integration Tests** - Validate framework functionality
@@ -98,6 +99,7 @@ dcyfr-ai-sandbox/
 ## 🧪 Test Coverage
 
 ### Framework Tests
+
 - ✅ Core plugin system
 - ✅ Configuration management
 - ✅ Telemetry tracking
@@ -105,12 +107,14 @@ dcyfr-ai-sandbox/
 - ✅ Agent lifecycle
 
 ### Integration Tests
+
 - ✅ @dcyfr/ai + @dcyfr/agents integration
 - ✅ Multi-plugin workflows
 - ✅ Configuration inheritance
 - ✅ Telemetry aggregation
 
 ### Plugin Tests
+
 - ✅ Design token validator
 - ✅ Barrel export validator
 - ✅ Page layout validator
@@ -120,16 +124,18 @@ dcyfr-ai-sandbox/
 
 ## 📚 Examples
 
+Standardized example index: [examples/README.md](./examples/README.md)
+
 ### Example 1: Basic Framework Usage
 
 **File:** `examples/basic-usage.js`
 
 ```typescript
-import { loadConfig, ValidationFramework } from '@dcyfr/ai';
+import { loadConfig, ValidationFramework } from "@dcyfr/ai";
 
 // Load configuration
 const config = await loadConfig();
-console.log('Loaded config:', config.projectName);
+console.log("Loaded config:", config.projectName);
 
 // Create validation framework
 const framework = new ValidationFramework({
@@ -140,11 +146,11 @@ const framework = new ValidationFramework({
 // Run validation
 const report = await framework.validate({
   projectRoot: process.cwd(),
-  files: ['src/**/*.ts'],
+  files: ["src/**/*.ts"],
   config: config.agents,
 });
 
-console.log(`Result: ${report.valid ? 'PASS ✅' : 'FAIL ❌'}`);
+console.log(`Result: ${report.valid ? "PASS ✅" : "FAIL ❌"}`);
 console.log(`Issues found: ${report.violations.length}`);
 ```
 
@@ -155,24 +161,24 @@ console.log(`Issues found: ${report.violations.length}`);
 **File:** `examples/plugin-system.js`
 
 ```typescript
-import { createPlugin, PluginLoader } from '@dcyfr/ai';
+import { createPlugin, PluginLoader } from "@dcyfr/ai";
 
 // Create a custom validation plugin
 const myPlugin = createPlugin({
-  name: 'my-validator',
-  version: '1.0.0',
-  description: 'Custom validation logic',
+  name: "my-validator",
+  version: "1.0.0",
+  description: "Custom validation logic",
   validate: async (context) => {
     const issues = [];
 
     // Example: Check for console.log in production code
-    context.files.forEach(file => {
-      if (file.content.includes('console.log')) {
+    context.files.forEach((file) => {
+      if (file.content.includes("console.log")) {
         issues.push({
           file: file.path,
           line: file.lineNumber,
-          message: 'Found console.log in production code',
-          severity: 'warning',
+          message: "Found console.log in production code",
+          severity: "warning",
         });
       }
     });
@@ -182,7 +188,7 @@ const myPlugin = createPlugin({
       issues,
       warnings: [],
     };
-  }
+  },
 });
 
 // Load and execute the plugin
@@ -190,7 +196,7 @@ const loader = new PluginLoader();
 await loader.loadPlugin(myPlugin);
 const result = await loader.validate();
 
-console.log('Validation complete:', result);
+console.log("Validation complete:", result);
 ```
 
 **Run:** `npm run example:plugins`
@@ -200,12 +206,12 @@ console.log('Validation complete:', result);
 **File:** `examples/agent-patterns.js`
 
 ```typescript
-import { Agent, ToolRegistry, ShortTermMemory } from '@dcyfr/ai';
+import { Agent, ToolRegistry, ShortTermMemory } from "@dcyfr/ai";
 
 // Create an agent with tools and memory
 const agent = new Agent({
-  name: 'Code Validator',
-  description: 'Validates code quality',
+  name: "Code Validator",
+  description: "Validates code quality",
   tools: new ToolRegistry(),
   memory: new ShortTermMemory(),
   maxIterations: 10,
@@ -213,8 +219,8 @@ const agent = new Agent({
 
 // Register custom tools
 agent.tools.register({
-  name: 'lintCode',
-  description: 'Lint code files',
+  name: "lintCode",
+  description: "Lint code files",
   execute: async (files) => {
     // Linting logic
     return { linted: files.length, issues: 0 };
@@ -223,11 +229,11 @@ agent.tools.register({
 
 // Run the agent
 const result = await agent.run({
-  task: 'Validate all TypeScript files',
-  files: ['src/**/*.ts'],
+  task: "Validate all TypeScript files",
+  files: ["src/**/*.ts"],
 });
 
-console.log('Agent result:', result);
+console.log("Agent result:", result);
 ```
 
 **Run:** `npm run example:agents`
@@ -268,6 +274,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 ### Plugin Validation Errors
 
 **Issue: Plugin fails to load with "Module not found"**
+
 - **Cause:** Plugin dependency not installed or incorrect import path
 - **Solution:**
   1. Verify plugin is in `node_modules`: `ls node_modules/@dcyfr/agents`
@@ -277,6 +284,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 - **Debug:** Run with `NODE_DEBUG=module npm test` to see module resolution
 
 **Issue: Plugin validation returns false positives**
+
 - **Cause:** Test fixtures or mock data triggering validation rules
 - **Solution:**
   1. Review validation logic in plugin source
@@ -288,6 +296,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 ### Configuration Loading Issues
 
 **Issue: `.dcyfr.yaml` not detected in tests**
+
 - **Cause:** Test runs from different directory or config not in test context
 - **Solution:**
   1. Place `.dcyfr.yaml` in sandbox root (same as `package.json`)
@@ -297,6 +306,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 - **Verify:** Run `npx @dcyfr/ai config:validate` to check config is found
 
 **Issue: Environment variables not overriding config in tests**
+
 - **Cause:** Variables not set before test execution or incorrect naming
 - **Solution:**
   1. Set env vars in test file: `process.env.DCYFR_AGENTS_DESIGNTOKENS_ENABLED = 'false'`
@@ -307,6 +317,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 ### Test Failures (Common Causes)
 
 **Issue: Tests pass locally but fail in CI**
+
 - **Cause:** Environment differences (file paths, OS-specific behavior, missing deps)
 - **Solution:**
   1. Check Node version matches: CI uses Node 20+
@@ -316,6 +327,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 - **CI-specific:** Ensure CI has access to workspace packages
 
 **Issue: Vitest reports "No test files found"**
+
 - **Cause:** Test pattern doesn't match files or incorrect vitest config
 - **Solution:**
   1. Verify test files match pattern: `tests/**/*.test.ts`
@@ -325,6 +337,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 - **Debug:** Run `npm test -- --reporter=verbose` to see file discovery
 
 **Issue: Type errors in tests after @dcyfr/ai update**
+
 - **Cause:** Breaking changes in framework API or TypeScript version mismatch
 - **Solution:**
   1. Check `@dcyfr/ai` changelog for breaking changes
@@ -338,6 +351,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 ## 📊 Test Reports
 
 Test results are generated in:
+
 - `coverage/` - Coverage reports (HTML + JSON)
 - `test-results/` - Test output logs
 
@@ -379,6 +393,7 @@ This is an experimentation sandbox for the DCYFR AI harness. When adding content
 **License:** MIT for personal/non-commercial use. Commercial use requires a paid tier.
 
 **Sponsorship Tiers:**
+
 - 🌍 **Community** (Free) - Personal use + Signal community
 - 🚀 **Founder** ($2,400/yr) - Full commercial license + consultation
 - 🏢 **Enterprise** ($9,600/yr) - Enterprise license + premium support

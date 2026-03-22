@@ -19,6 +19,9 @@
     "example:basic": "node examples/basic-usage.js",
     "example:plugins": "node examples/plugin-system.js",
     "example:agents": "node examples/agent-patterns.js",
+    "examples:compile": "node --check examples/basic-usage.js && node --check examples/plugin-system.js && node --check examples/agent-patterns.js",
+    "examples:check": "npm run example:basic && npm run example:plugins && npm run example:agents",
+    "examples:test": "npm run examples:compile && npm run examples:check",
     "version:patch": "npm version patch -m 'chore: bump version to %s'",
     "version:minor": "npm version minor -m 'chore: bump version to %s'",
     "version:major": "npm version major -m 'chore: bump version to %s'"
