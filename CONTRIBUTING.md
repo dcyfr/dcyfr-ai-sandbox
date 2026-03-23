@@ -5,11 +5,14 @@ Thank you for your interest in contributing! This sandbox is part of the DCYFR A
 ## Licensing & Contributions
 
 By contributing to this sandbox, you agree that:
+
 - Your contributions will be licensed under the MIT License
 - You have the right to submit the contribution under this license
 - You grant DCYFR Labs perpetual rights to use, modify, and distribute your contribution
 
 **Trademark:** "DCYFR" is a trademark of DCYFR Labs. See [TRADEMARK.md](../TRADEMARK.md)
+
+**Questions?** Contact [licensing@dcyfr.ai](mailto:licensing@dcyfr.ai)
 
 ---
 
@@ -32,6 +35,7 @@ This is an experimentation sandbox, so contributions can include:
 ## Testing
 
 Run tests before submitting:
+
 ```bash
 npm run test:run
 npm run typecheck

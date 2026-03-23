@@ -16,6 +16,15 @@
 Version: 1.0.1 (internal)
 Status: Active Development (Workspace-Only)
 
+## About DCYFR
+
+`@dcyfr/ai-sandbox` is maintained by **DCYFR Labs** as part of the DCYFR internal experimentation portfolio.
+
+- **DCYFR** is a registered trademark of DCYFR Labs.
+- Primary domain: [www.dcyfr.ai](https://www.dcyfr.ai)
+- Trademark guidance: [../TRADEMARK.md](../TRADEMARK.md)
+- Licensing details: [LICENSE](./LICENSE)
+
 ---
 
 ## 📋 Overview
