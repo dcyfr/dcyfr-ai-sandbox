@@ -1,5 +1,13 @@
 # DCYFR AI Sandbox
 
+<!-- README-META
+  tlp_clearance: GREEN
+  status: active
+  name: dcyfr-ai-sandbox
+  description: Sandbox and examples for DCYFR AI harness experimentation
+  last_validated: 2026-03-29
+-->
+
 > **🔒 INTERNAL TESTING INFRASTRUCTURE (Not for Public Use)**  
 > This is internal testing and experimentation infrastructure for the DCYFR workspace.  
 > **Status:** Never published to npm (marked `"private": true`)  
