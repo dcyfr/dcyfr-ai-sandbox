@@ -125,7 +125,7 @@ dcyfr-ai-sandbox/
 
 ### Integration Tests
 
-- ✅ @dcyfr/ai + @dcyfr/agents integration
+- ✅ @dcyfr/ai + @dcyfr/workspace-agents integration
 - ✅ Multi-plugin workflows
 - ✅ Configuration inheritance
 - ✅ Telemetry aggregation
@@ -262,7 +262,7 @@ See [examples/](./examples/) directory for complete, runnable code.
 ## 🔗 Dependencies
 
 - **@dcyfr/ai** - Core AI framework (workspace dependency)
-- **@dcyfr/agents** - Validation plugins (workspace dependency)
+- **@dcyfr/workspace-agents** - Validation plugins (workspace dependency)
 - **vitest** - Test runner
 - **typescript** - Type checking
 
@@ -294,8 +294,8 @@ See [examples/](./examples/) directory for complete, runnable code.
 
 - **Cause:** Plugin dependency not installed or incorrect import path
 - **Solution:**
-  1. Verify plugin is in `node_modules`: `ls node_modules/@dcyfr/agents`
-  2. Check import path: `import { myPlugin } from '@dcyfr/agents'`
+  1. Verify plugin is in `node_modules`: `ls node_modules/@dcyfr/workspace-agents`
+  2. Check import path: `import { myPlugin } from '@dcyfr/workspace-agents'`
   3. Rebuild workspace: `npm install` from workspace root
   4. Clear node_modules cache: `rm -rf node_modules && npm install`
 - **Debug:** Run with `NODE_DEBUG=module npm test` to see module resolution
@@ -423,7 +423,7 @@ This is an experimentation sandbox for the DCYFR AI harness. When adding content
 ## 🔗 Related Projects
 
 - [@dcyfr/ai](../dcyfr-ai) - Core AI framework
-- [@dcyfr/agents](../dcyfr-ai-agents) - Validation plugins
+- [@dcyfr/workspace-agents](../dcyfr-workspace-agents) - Validation plugins
 - [dcyfr-labs](../dcyfr-labs) - Main application
 
 ---
