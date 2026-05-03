@@ -19,7 +19,7 @@
 [![Tests](https://img.shields.io/badge/Tests-Passing-28a745?style=flat-square)](./tests/)
 [![Coverage](https://img.shields.io/badge/Coverage-85%25-yellow?style=flat-square)](./coverage/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)](./tsconfig.json)
-[![Private](https://img.shields.io/badge/Status-Internal%20Only-red?style=flat-square)](https://github.com/dcyfr/dcyfr-ai-sandbox)
+[![Private](https://img.shields.io/badge/Status-Internal%20Only-red?style=flat-square)](https://github.com/dcyfr-labs/dcyfr-ai-sandbox)
 
 Version: 1.0.1 (internal)
 Status: Active Development (Workspace-Only)
