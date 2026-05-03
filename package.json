@@ -53,10 +53,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dcyfr/dcyfr-ai-sandbox.git"
+    "url": "https://github.com/dcyfr-labs/dcyfr-ai-sandbox.git"
   },
   "bugs": {
-    "url": "https://github.com/dcyfr/dcyfr-ai-sandbox/issues"
+    "url": "https://github.com/dcyfr-labs/dcyfr-ai-sandbox/issues"
   },
-  "homepage": "https://github.com/dcyfr/dcyfr-ai-sandbox#readme"
+  "homepage": "https://github.com/dcyfr-labs/dcyfr-ai-sandbox#readme"
 }
