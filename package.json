@@ -30,7 +30,6 @@
     "changeset:tag": "changeset tag"
   },
   "dependencies": {
-    "@dcyfr/ai-agents": "github:dcyfr-labs/dcyfr-ai-agents#v1.0.0",
     "@dcyfr/ai": "^3.0.1"
   },
   "devDependencies": {
